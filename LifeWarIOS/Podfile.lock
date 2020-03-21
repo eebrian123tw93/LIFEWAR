@@ -1,3 +1,26 @@
-PODFILE CHECKSUM: 0a192402c9230e06a1be5ebbefcab7f02092ec55
+PODS:
+  - HandyJSON (5.0.1)
+  - KeyboardObserving (0.2.1)
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
+
+DEPENDENCIES:
+  - HandyJSON (~> 5.0.1)
+  - KeyboardObserving
+  - Kingfisher (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+    - KeyboardObserving
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  KeyboardObserving: d80b12a71a9ca1111372281eab70d454f9871e06
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+
+PODFILE CHECKSUM: 6284441f50858931561a661e213a0f356bf81d80
 
 COCOAPODS: 1.8.4
