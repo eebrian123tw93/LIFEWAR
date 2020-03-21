@@ -12,7 +12,7 @@
 		C2B482841A1D07A9824060DF /* Pods_LifeWarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F22B0ABC754B6A731C5FB9A /* Pods_LifeWarTests.framework */; };
 		D3C4147324264E5D0080EC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4147224264E5D0080EC89 /* AppDelegate.swift */; };
 		D3C4147524264E5D0080EC89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4147424264E5D0080EC89 /* SceneDelegate.swift */; };
-		D3C4147724264E5D0080EC89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4147624264E5D0080EC89 /* ContentView.swift */; };
+		D3C4147724264E5D0080EC89 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4147624264E5D0080EC89 /* TabBarView.swift */; };
 		D3C4147924264E5F0080EC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C4147824264E5F0080EC89 /* Assets.xcassets */; };
 		D3C4147C24264E5F0080EC89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C4147B24264E5F0080EC89 /* Preview Assets.xcassets */; };
 		D3C4147F24264E5F0080EC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C4147D24264E5F0080EC89 /* LaunchScreen.storyboard */; };
@@ -49,7 +49,7 @@
 		D3C4146F24264E5D0080EC89 /* LifeWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C4147224264E5D0080EC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C4147424264E5D0080EC89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3C4147624264E5D0080EC89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3C4147624264E5D0080EC89 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		D3C4147824264E5F0080EC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3C4147B24264E5F0080EC89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3C4147E24264E5F0080EC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 				90BF68D9F0B6908815616672 /* Pods-LifeWarTests.debug.xcconfig */,
 				921E191F9CCBDE0DDEEA812E /* Pods-LifeWarTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,7 +141,7 @@
 			children = (
 				D3C4147224264E5D0080EC89 /* AppDelegate.swift */,
 				D3C4147424264E5D0080EC89 /* SceneDelegate.swift */,
-				D3C4147624264E5D0080EC89 /* ContentView.swift */,
+				D3C4147624264E5D0080EC89 /* TabBarView.swift */,
 				D3C4147824264E5F0080EC89 /* Assets.xcassets */,
 				D3C4147D24264E5F0080EC89 /* LaunchScreen.storyboard */,
 				D3C4148024264E5F0080EC89 /* Info.plist */,
@@ -188,6 +187,7 @@
 				D3C4146B24264E5D0080EC89 /* Sources */,
 				D3C4146C24264E5D0080EC89 /* Frameworks */,
 				D3C4146D24264E5D0080EC89 /* Resources */,
+				6595FCC71122E51F517CE5E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +225,7 @@
 				D3C4148C24264E5F0080EC89 /* Sources */,
 				D3C4148D24264E5F0080EC89 /* Frameworks */,
 				D3C4148E24264E5F0080EC89 /* Resources */,
+				CA6911A5EFDE6F80EC8EE6A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,6 +352,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6595FCC71122E51F517CE5E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeWar/Pods-LifeWar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeWar/Pods-LifeWar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifeWar/Pods-LifeWar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B2A18B6175506FB2D525D202 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +391,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CA6911A5EFDE6F80EC8EE6A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeWar-LifeWarUITests/Pods-LifeWar-LifeWarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeWar-LifeWarUITests/Pods-LifeWar-LifeWarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifeWar-LifeWarUITests/Pods-LifeWar-LifeWarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -382,7 +417,7 @@
 			files = (
 				D3C4147324264E5D0080EC89 /* AppDelegate.swift in Sources */,
 				D3C4147524264E5D0080EC89 /* SceneDelegate.swift in Sources */,
-				D3C4147724264E5D0080EC89 /* ContentView.swift in Sources */,
+				D3C4147724264E5D0080EC89 /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
