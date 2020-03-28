@@ -3,7 +3,8 @@
 
 target 'LifeWar' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  # use_frameworks! crash when launch so use use_modular_headers!
+  use_modular_headers!
 
   pod 'HandyJSON', '~> 5.0.1'
   pod 'Kingfisher', '~> 5.0'
