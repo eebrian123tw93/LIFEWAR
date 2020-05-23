@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		D3C4147F24264E5F0080EC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C4147D24264E5F0080EC89 /* LaunchScreen.storyboard */; };
 		D3C4148A24264E5F0080EC89 /* LifeWarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4148924264E5F0080EC89 /* LifeWarTests.swift */; };
 		D3C4149524264E5F0080EC89 /* LifeWarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4149424264E5F0080EC89 /* LifeWarUITests.swift */; };
+		D3D4EF4924797D4100859AF4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4EF4824797D4100859AF4 /* LoginView.swift */; };
 		DD19FB5935FE59C700B13E5E /* libPods-LifeWar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B57C08CAA82F01E03D2C08FC /* libPods-LifeWar.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		D3C4149024264E5F0080EC89 /* LifeWarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeWarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C4149424264E5F0080EC89 /* LifeWarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeWarUITests.swift; sourceTree = "<group>"; };
 		D3C4149624264E5F0080EC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D4EF4824797D4100859AF4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D3D4EF4A24798B3B00859AF4 /* LifeWar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeWar.entitlements; sourceTree = "<group>"; };
 		D6C9479FF13BD60678A62EC1 /* Pods-LifeWar-LifeWarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeWar-LifeWarUITests.release.xcconfig"; path = "Target Support Files/Pods-LifeWar-LifeWarUITests/Pods-LifeWar-LifeWarUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +142,7 @@
 		D3C4147124264E5D0080EC89 /* LifeWar */ = {
 			isa = PBXGroup;
 			children = (
+				D3D4EF4A24798B3B00859AF4 /* LifeWar.entitlements */,
 				D3C4147224264E5D0080EC89 /* AppDelegate.swift */,
 				D3C4147424264E5D0080EC89 /* SceneDelegate.swift */,
 				D3C4147624264E5D0080EC89 /* TabBarView.swift */,
@@ -146,6 +150,7 @@
 				D3C4147D24264E5F0080EC89 /* LaunchScreen.storyboard */,
 				D3C4148024264E5F0080EC89 /* Info.plist */,
 				D3C4147A24264E5F0080EC89 /* Preview Content */,
+				D3D4EF4824797D4100859AF4 /* LoginView.swift */,
 			);
 			path = LifeWar;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 			files = (
 				D3C4147324264E5D0080EC89 /* AppDelegate.swift in Sources */,
 				D3C4147524264E5D0080EC89 /* SceneDelegate.swift in Sources */,
+				D3D4EF4924797D4100859AF4 /* LoginView.swift in Sources */,
 				D3C4147724264E5D0080EC89 /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +553,7 @@
 			baseConfigurationReference = 074D0586F1C2FC3F1CA817EB /* Pods-LifeWar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LifeWar/LifeWar.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LifeWar/Preview Content\"";
@@ -560,6 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianlu.LifeWar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -570,6 +578,7 @@
 			baseConfigurationReference = 8C6069318FFC6D4457F09484 /* Pods-LifeWar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LifeWar/LifeWar.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LifeWar/Preview Content\"";
@@ -583,6 +592,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianlu.LifeWar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
